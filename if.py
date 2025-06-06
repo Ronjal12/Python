@@ -4,5 +4,5 @@ b="Harry"
 if b in a:
     print("The post is talking about harry")
 
-else:
+elif b not in a:
     print("The post is not talking about harry.")
