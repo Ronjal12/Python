@@ -7,7 +7,7 @@ def func1():
 
     print(L)
 
-    your_choice=int(input("Enter your choice in number"))
+    your_choice=int(input("Enter your choice in number: "))
 
     Your_choice=L[your_choice-1]
 
@@ -45,6 +45,6 @@ choice="y"
 
 while(choice =="y"):
     func1()
-    choice=input("DO you want to continue playing y/n").lower() 
+    choice=input("DO you want to continue playing y/n:  ").lower() 
 
 print("Thankyou for playing.")
