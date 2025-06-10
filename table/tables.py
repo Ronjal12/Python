@@ -1,10 +1,10 @@
-def generateTable(n):
-    table = ""
+def generate(n):
+    table=""
     for i in range(1,11):
-        table+=f"{n} X {i} = {n*i}"
+        table += f"{n} X {i} = {n*i}\n"
 
-    with open(f"table", "w") as f:
-        f.write(table)
-        
+        with open("table/table_{n}","w") as f:
+            f.write(table)
+
 for i in range(2,21):
-    generateTable(i)
+    generate(i)
