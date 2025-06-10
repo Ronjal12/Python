@@ -1,6 +1,10 @@
-with open("file.txt", "w") as f:
-    n=input("Enter the number: ")
-
+def generateTable(n):
+    table = ""
     for i in range(1,11):
-            s= f"{n} X {i}={n*i}"
-            f.write(s)
+        table+=f"{n} X {i} = {n*i}"
+
+    with open(f"table/table_{n}", "w") as f:
+        f.write(table)
+        
+for i in range(2,21):
+    generateTable(i)
